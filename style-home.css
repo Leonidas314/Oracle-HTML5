@@ -1,0 +1,83 @@
+p{
+    text-align: center; background-color: #CCCCCC;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0px ;
+}
+.caja{
+    position: relative;/* relativa a la posicion absoluta definida enteriormente*/  
+    width: 940px; /* Cuanto ocupa nuestra class caja? 940pixeles porque generalmente las pantallas tienen mas de 1240 pix. */
+    margin: auto; /* se calcula automatico según la resolucion del usuario para no generar problemas*/
+    
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+
+}
+nav li , .ul2{
+    display: inline; /* Lista ordenada horizontalmente*/
+    margin:0 0 0 15px; /* Separacion de los elementos de la lista y posicionamiento*/
+}
+nav a{
+    text-transform: uppercase;/*transformar a mayusculas*/
+    color: #000000;
+    font-weight: bold;/*grosor de la fuente*/
+    font-size: 22px;
+    text-decoration: none;/*quitamos la decoracion por defecto en los links*/
+}
+nav a:hover{/* : hover captura el movimiento de mouse cuando pasa por encima de nav*/
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+body{
+    background-color: #ffffff;
+
+}
+
+em strong{
+    color: red;
+}
+#banner{
+    width: 100%;
+}
+#mision{
+    font-size: 20px;
+}
+.items{
+    font-style: italic;
+
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 20%;
+}
+
+.principal{
+
+    background-color:#CCCCCC ;
+    padding: 20px;
+}
+.diferenciales{
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+.titulo-principal{
+
+    padding: 20px;
+}
+.tituloCentralizado{
+    text-align: center;
+}
+
+.imagenDiferenciales{
+
+    width: 50%;
+}

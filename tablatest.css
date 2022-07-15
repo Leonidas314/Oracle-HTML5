@@ -1,0 +1,18 @@
+table{
+ background: olive;
+}
+thead{
+    background: darkolivegreen;
+    
+}
+.table{ 
+    margin: 10px auto;
+    border:1px solid black;
+}
+.tr{
+    border: 1px solid black;
+}
+.columna1, .columna2{
+    border: 1px solid black;
+    padding: 5px 5px;
+}

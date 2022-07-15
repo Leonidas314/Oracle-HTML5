@@ -1,0 +1,120 @@
+<!DOCTYPE html> <!--Información para el navegador sobre que tipo de documento va a abrir, este caso es para html Versión 5-->
+
+<html lang="es"><!-- lang = "es" para traduccion automatica al español -->
+
+   <!-- head y body son tags con un fin unicamente de estructuración y orden visual del código-->
+   <!-- Se acostumbra usar la tag head para la informacion sobre el código y la tag body para el contenido-->
+    <head>
+
+        <meta charset="UTF-8"> <!--Diccionario para que el navegador reconozca los carácteres especiales, en Chrome generalmente no hay problemas pero si en otros navegadores-->
+
+        <meta name="viewport" content="width=device-width"><!--Tag necesaria para hacer la pagina responsiva-->
+
+        <title>Barbería Alura</title> <!--Titulo en pestaña-->
+        
+        <!--La formatacion CSS se utilizan creando un archivo ".css" aparte y vinculandolo de la siguiente forma ( en este caso el archivo a vincular es "style.css")-->
+        <link rel="stylesheet" href="style.css">
+      
+        <!--Link para importar un estilo de fuente desde google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <!--Si... todo esto es el link de la fuente importada!-->
+
+
+        <!--Link para "resetear el formato" y evitar sobreposicion de formatos anhadidos con los por defecto-->
+        <link rel="stylesheet" href="reset.css">
+       
+    </head>
+
+
+    <body class="body">
+
+        <header>
+            <div class="caja">
+           
+             <h1><img src="imagenes/logo.png" alt="Logo de la Barbería Alura"></h1>   
+                
+                <nav>
+                    <ul class="ul2">
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="productos.html">Productos</a></li>
+                         <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <img class="banner " src="banner/banner.jpg">
+
+        <main>
+
+            <section class="principal">
+
+                <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+                <img class="utencilios" src="imagenes/utensilios[1].jpg" alt="Utencilios de un barbero.">
+                <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+                <p id="mision"><em>Nuestra misión es:<strong> "Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
+                <p >Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros  clientes.</p>
+            
+            </section>
+
+            <!--En la siguiente seccion se encuentra el codigo para anclar un mapa en nuestra pagina-->
+            <section class="mapa">
+                    <h3 class="titulo-principal"> Nuestra Ubicación</h3>
+                    <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
+                    <div class="mapa-contenido">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8696.437675921006!2d-46.64514030062873!3d-23.589924719525477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Education%20and%20Innovation!5e0!3m2!1ses-419!2sar!4v1653784278879!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- La tag frame es para abrir tipo ventanda para colocar elementos como mapas, videos, gifs, etc. se incorpora con su src ,width heigth, style, allowfullsscreen, y loadinf, (propiedades)-->
+                    </div>
+            </section>
+
+            <!--Lista e imagen-->
+            <section class="diferenciales">
+
+                <h3 class="titulo-principal"> Diferenciales</h3>  
+                <div class="contenido-diferenciales">
+                    <ul class="lista-diferenciales">
+                        <li class="items">Atencion personalizada al cliente</li>
+                        <li class="items">Espacio diferenciado</li>
+                        <li class="items">Localizacion</li>
+                        <li class="items">Profesionales calificados</li>
+                        <li class="items">Puntialidad</li>
+                        <li class="items">Limpieza</li>
+                    </ul><img src="diferenciales/diferenciales.jpg" class="imagen-diferenciales">
+                    <!--Imagen siguida sin salto de linea para correcta lectura del inline-block-->
+                </div>
+
+                <div class="video">
+
+                    <!--IMPORTANTE: width="100%" es necesario para que el efecto de la herramienta responsiva del CSS a la hora de ajustar la anchura del videoz-->
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+                </div>
+    
+    
+            </section>
+
+
+    
+        </main>
+
+
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="Logo de la Barbería Alura">
+            <p class="copyrigth">&copy Copyrigth Barbería Alura - 2020</p>
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+
+
+<!--JavaScript-->
+<script>
+
+    //Comentarios
+</script>

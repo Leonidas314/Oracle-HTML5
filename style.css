@@ -1,0 +1,307 @@
+body , .body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    
+    background-color: #BBBBBB;
+    padding: 20px 0px ;
+}
+.caja{
+    position: relative;/* relativa a la posicion absoluta definida enteriormente*/  
+    width: 940px; /* Cuanto ocupa nuestra class caja? 940pixeles porque generalmente las pantallas tienen mas de 1240 pix. */
+    margin: auto; /* se calcula automatico según la resolucion del usuario para no generar problemas*/
+    
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+
+}
+nav li{
+    display: inline; /* Lista ordenada horizontalmente*/
+    margin:0 0 0 15px; /* Separacion de los elementos de la lista y posicionamiento*/
+}
+nav a{
+    text-transform: uppercase;/*transformar a mayusculas*/
+    color: #000000;
+    font-weight: bold;/*grosor de la fuente*/
+    font-size: 22px;
+    text-decoration: none;/*quitamos la decoracion por defecto en los links*/
+}
+nav a:hover{/* : hover captura el movimiento de mouse cuando pasa por encima de nav*/
+    color: #c78c19;
+    text-decoration: underline;
+}
+.productos{
+    width: auto;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li{
+   display: inline-block;
+   text-align: center;
+   width: auto ; /*Que cada elemento de la lista ocupe el 30% del espacio*/
+   vertical-align: top;
+   background-color: #BBBBBB;
+   margin: 0 1.5%; /*margen vertica = 0; margen laterar 1.5% para separar equitativamente los elementos*/
+   padding: 30px 20px; 
+   box-sizing: border-box; /*Propiedad para contabilizar el padding dentro del porcentaje definido de width y evitar que se desacomoden los elemetos*/
+   
+   border: 2px solid black ;
+   border-radius: 10px; /* 25px 24px 51px*/ 
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 20px ;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.ul3{
+    font-family: 'Montserrat', sans-serif;
+}
+.productos li:hover{
+    border-color: #c78c19;
+        
+}
+.productos li:active{/*De manera similar a :hover, :active captura el evento de hacer click sobre el elemento*/
+    border-color: #088c19;
+
+}
+.productos li:hover h2{/*Para afectar a h2 con los titulos y a la li de productos con sus imagenes*/
+    font-size: 33px;
+}
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);/*La propiedad background con la opcion "url" nos permite importar una
+    imagen para usar de fondo, esta imagen se repetira a lo largo de todo el espacio determinado para el footer*/
+    padding: 10px;
+}
+.copyrigth{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+form{
+  margin: 40px 0;
+}
+/*Podemos aplicar el mismo formato CSS para mas de una etiqueta separandolas con una coma*/
+form label, form legend{
+  display: block;
+  font-size: 20;
+  margin: 5px 5px 5px ;
+
+}
+.legend2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.input-padron{
+  display:block;/*Ocupa toda la pantalla como un bloque, cuidado con los inputs!*/
+  margin:0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+/*¿¿¿Cual el la prioridad en CSS cuando se selecciona una clase, un tag, un id u otro elemento HTML???
+La priodad de cambio de formato ID > Class > TAGs en CSS.
+p{ color: red;}(tag p) ; .test{color: blue;}(class:test) ; #test{ color: yellow;} (id: test) El color sera yellow, ya que el id es prioritario.
+... pero cambiar el formato INLINE es decir dentro de la tag en el archivo HTML con la herramienta style: ; Tiene mayor prioridad que cualquier cambio en el archivo CSS. Entonces, PRIORIDAD DE CAMBIO DE FORMATO:
+INLINE>ID>CLASS>TAG
+p{color: blueviolet;}
+p.test{color: #088c19;} => LA PRIORIDAD SE SUMA CUANDO LAS COMBINAMOS (tag+class>class)
+.test{ color: #c78c19;}
+*/
+.enviar{
+    width: 40%;
+    padding: 15px ;
+    font-size: bold;
+    color: white;
+    background-color: orange;
+    transition: 1s all; /*Tiempo de transicion de un background color a otro que es determinado en el hover a continuacion*/
+    cursor: pointer; /*cambia el puntero al pasar por el elemento class:enviar*/
+    border-radius: 5px;
+    border: none;
+}
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2); /*transform: scale(), aumenta el tamaño de esta clase rotate( deg)  crea un efecto de rotacion */
+}
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+tbody{
+    background-color: #cccccc;
+}
+
+.columna1, .columna2{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    margin-bottom: 5px;
+
+}
+
+
+/*CSS Para nuestra HOME PAGE*/
+
+
+.banner{
+    width: 100%;
+
+}
+/*Cómo seleccionar un elemento "hijo" de una determinada etiqueta "Padre" con
+"main > p" selecciona todos los "p" que le siguen en jerarquia a la main*/
+
+/*Cómo seleccionar (un) elemento "Hermano" es decir de la misma jerarquia que viene
+luego de otro con "img + p" seleccionamos el  primer "p" que le sigue a la una "img" en el codigo.*/
+
+/*Cómo seleccionar TODOS los elemetos que le siguen a una determinada tag: con
+" img ~ p " por ejemplo seleccionamos a todos los parrafos siguientes a la img en la misma jerarquia.*/
+
+/*Con " .principal p: not(mision){} Podemos aplicar CSS a todos los elementos de los "p" de clase
+"principal" EXCLUYENDO la clase o id "mision".*/
+.titulo-principal{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 2em; /* 2 veces el tamaño estandar del navegador*/
+    /*color:rgba(0, 0, 0, opacidad)*/
+    /*text-shadow puede dar sombra al texto*/
+}
+
+.titulo-principal:first-letter{
+    font-weight: bold;
+    
+}
+/*Agregar contenido antes y despues
+.titulo-principal::before{
+    content: "[";
+}  
+.titulo-principal::after{
+    content: "]";
+} 
+*/
+p::first-line{
+    font-style: italic;
+}
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width:940px;
+    margin:0 auto;
+}
+.principal p{
+    line-height: 1.3;
+}
+.principal strong{
+    font-weight: bold;
+
+}
+.principal em{
+
+font-style: italic;
+}
+.utencilios{
+    padding: 0 10px;
+    width: 120px;/* Tambien podemos usar por ejemplo width:calc(40%-(26px))*/
+    float: left; /* Propiedad que acomoda a la imagen o elemento junto al texto o elemento que le sigue
+    en este caso se acomoda a la izquiera del parrafo siguiente*/
+    
+}
+.mapa{
+    padding: 3em 0 ;
+    background:linear-gradient(#fefefe, #888888);
+    /* -- Otras configuraciones para transcicion entre colores: con angulos y radiales
+    /*background: linear-gradient(45deg , orange, blue , red, black)*/
+    /*background: radial-gradient(orange, black, blue, red);*/
+}
+.mapa p{
+    margin:0 0 2em;
+    text-align: center;
+}
+.mapa-contenido{
+    width:940px;
+    margin: 0 auto;
+}
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto; /* 0 arriba y abajo, automatico laterales*/
+    
+}
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block; /*Hace una lectura tal cual esta ordenado el codigo html, si ahy un salt de linea entre elemtenos html
+     el display lo va a considerar y no se aplicara a lo que haya luego del salto de linea, para que funcione...
+     hay que colocar todo seguido, en este caso la imagen, hay que colocarla seguida de la lista*/
+    vertical-align: top;
+}
+.items{
+    line-height: 1.5; /*Espacio entre lineas o "altura de linea" 1.5 = 1 + 50%*/ 
+}
+.items::before{
+
+    content:"\272F"; 	
+            
+}
+.items:first-child{
+
+    font-weight: bold;
+
+}
+/*items:nth-child(n) Pseudo clase de item donde podemos elegir el (n-esimo) elemento de la clase item*/
+/*items:last-child Pseudo clase de item donde podemos elegir el ("ulitmo hijo") de la clase items*/
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;/* -10px -10px yellow*/
+    /*box-shadow: ejex ejey grosor difuminacion color*/
+    /*La propiedad inset puede aplicar sombras internas*/
+}
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+   
+}
+.video{
+    width: 60%;
+    margin: 1.2em auto;
+    
+}
+/*Responsive CSS tool para pantallas de un maximo de 480pixeles*/
+/* El siguiente codigo acomoda o ajusta los elementos HTML para cuando la pantalla
+es de un dispositivo movil de 480px de ancho o menor*/
+@media  screen and (max-width:480px) {
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, .productos{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}
+/*RECORDAR: Para aplicar los efectos hay que cambiar a "auto" los elemetnos en su html
+ya que algunos elementos como el mapa o el video tienen por defecto un width fijo */
+/*DESAFIO: AJUSTAR LOS ELEMENTOS FALTANTES LA HOME Y LAS DEMAS PAGINAS!!!*/
